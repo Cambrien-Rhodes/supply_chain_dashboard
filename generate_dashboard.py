@@ -23,7 +23,7 @@ category_cap = df.groupby('category')['total_capital'].sum().reset_index()
 top5_reorder = critical_df.sort_values(by='reorder_cost', ascending=False).head(5)
 
 fig, axes = plt.subplots(2, 2, figsize=(14, 10))
-fig.suptitle('STRATION SOLUTIONS — SUPPLY CHAIN EXECUTIVE DASHBOARD', fontsize=16, fontweight='bold', y=0.98)
+fig.suptitle('SUPPLY CHAIN EXECUTIVE DASHBOARD', fontsize=16, fontweight='bold', y=0.98)
 
 
 axes[0, 0].barh(category_cap['category'], category_cap['total_capital'], color='#2b5c8f')
